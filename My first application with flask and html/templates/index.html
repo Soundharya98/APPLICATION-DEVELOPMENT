@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOME PAGE</title>
+  </head>
+  <body style="background-color: gray">
+    <h1 style="text-align: center">Welcome to the HOME PAGE</h1>
+    <h2 style="text-align: center">Thanks for Visiting</h2>
+
+    <form action="" method="post" style="text-align: center">
+      <label>Email</label>
+      <input type="text" name="in_1" /> <br />
+      <label>Password</label>
+      <input type="password" name="in_2" /> <br />
+      <input type="submit" value="SUBMIT" />
+    </form>
+
+    <form action="{{url_for('search_function')}}" style="text-align: center">
+      <label> Enter something to search</label>
+      <input type="text" name="in_1" /><br />
+      <button>submit</button>
+    </form>
+  </body>
+</html>
